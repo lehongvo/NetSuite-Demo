@@ -1,0 +1,80 @@
+{
+    "items": [
+        {
+            "inventoryId": "2_44246",
+            "locationId": "2",
+            "quantity": 2,
+            "sku": "MSA - Item Testing Bins",
+            "tracked": true,
+            "status": 1,
+            "updatedAt": "2025-11-17T07:10:38Z",
+            "uuid": "2_44246",
+            "productId": "44246",
+            "locationName": "Cabang",
+            "decimalQuantity": 2,
+            "id": "2_44246",
+            "quantityOnHand": "2"
+        },
+        {
+            "inventoryId": "3_44246",
+            "locationId": "3",
+            "sku": "MSA - Item Testing Bins",
+            "tracked": true,
+            "updatedAt": "2025-04-09T09:02:34Z",
+            "uuid": "3_44246",
+            "productId": "44246",
+            "locationName": "Gudang Cabang",
+            "id": "3_44246",
+            "quantityOnHand": "-1"
+        },
+        {
+            "inventoryId": "1_44246",
+            "locationId": "1",
+            "quantity": 118,
+            "sku": "MSA - Item Testing Bins",
+            "tracked": true,
+            "status": 1,
+            "updatedAt": "2025-12-11T10:30:23Z",
+            "uuid": "1_44246",
+            "productId": "44246",
+            "locationName": "Pusat",
+            "decimalQuantity": 118,
+            "id": "1_44246",
+            "quantityOnHand": "118"
+        },
+        {
+            "inventoryId": "5_44246",
+            "locationId": "5",
+            "quantity": 33,
+            "sku": "MSA - Item Testing Bins",
+            "tracked": true,
+            "status": 1,
+            "updatedAt": "2025-06-19T09:21:43Z",
+            "uuid": "5_44246",
+            "productId": "44246",
+            "locationName": "Testing Cabang",
+            "decimalQuantity": 33,
+            "id": "5_44246",
+            "quantityOnHand": "33"
+        },
+        {
+            "inventoryId": "6_44246",
+            "locationId": "6",
+            "quantity": 6,
+            "sku": "MSA - Item Testing Bins",
+            "tracked": true,
+            "status": 1,
+            "updatedAt": "2025-06-04T07:35:44Z",
+            "uuid": "6_44246",
+            "productId": "44246",
+            "locationName": "Testing gudang cabang",
+            "decimalQuantity": 6,
+            "id": "6_44246",
+            "quantityOnHand": "6"
+        }
+    ],
+    "page": 1,
+    "limit": 1000,
+    "countItems": 5,
+    "maxPage": 1
+}

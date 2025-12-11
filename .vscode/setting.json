@@ -1,0 +1,17 @@
+{
+    "window.zoomLevel": 0.3,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.fontFamily": "'Iosevka', 'Cascadia Code', 'Victor Mono', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, 'Liberation Mono', monospace",
+    "editor.letterSpacing": 0.2,
+    "editor.fontLigatures": true,
+    "editor.inlayHints.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "workbench.colorCustomizations": {
+      "editor.background": "#0f111a"
+    },
+    "[go]": {
+      "editor.formatOnSave": false
+    },
+    "workbench.tree.indent": 16
+  }
