@@ -1,0 +1,749 @@
+{
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://9342705.suitetalk.api.netsuite.com/services/rest/query/v1/suiteql?limit=1000\u0026offset=0"
+    }
+  ],
+  "count": 108,
+  "items": [
+    {
+      "internalid": "1",
+      "isinactive": "F",
+      "links": [],
+      "name": "Kas Besar",
+      "number": "11101"
+    },
+    {
+      "internalid": "222",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bank Maybank",
+      "number": "11201"
+    },
+    {
+      "internalid": "224",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bank BNI",
+      "number": "11205"
+    },
+    {
+      "internalid": "429",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bank BPD",
+      "number": "11206"
+    },
+    {
+      "internalid": "225",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bank BCA",
+      "number": "11207"
+    },
+    {
+      "internalid": "226",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bank Mandiri",
+      "number": "11209"
+    },
+    {
+      "internalid": "227",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bank BRI",
+      "number": "11211"
+    },
+    {
+      "internalid": "119",
+      "isinactive": "F",
+      "links": [],
+      "name": "Piutang Usaha",
+      "number": "12000"
+    },
+    {
+      "internalid": "409",
+      "isinactive": "F",
+      "links": [],
+      "name": "Uang Muka Pembelian",
+      "number": "13001"
+    },
+    {
+      "internalid": "118",
+      "isinactive": "F",
+      "links": [],
+      "name": "Piutang Karyawan",
+      "number": "13002"
+    },
+    {
+      "internalid": "230",
+      "isinactive": "F",
+      "links": [],
+      "name": "Lainnya",
+      "number": "13005"
+    },
+    {
+      "internalid": "211",
+      "isinactive": "F",
+      "links": [],
+      "name": "PPn Masukan",
+      "number": "14001"
+    },
+    {
+      "internalid": "234",
+      "isinactive": "F",
+      "links": [],
+      "name": "Persediaan",
+      "number": "15100"
+    },
+    {
+      "internalid": "424",
+      "isinactive": "F",
+      "links": [],
+      "name": "Bangunan",
+      "number": "17105"
+    },
+    {
+      "internalid": "236",
+      "isinactive": "F",
+      "links": [],
+      "name": "Kendaraan",
+      "number": "17110"
+    },
+    {
+      "internalid": "237",
+      "isinactive": "F",
+      "links": [],
+      "name": "Inventaris Kantor",
+      "number": "17115"
+    },
+    {
+      "internalid": "239",
+      "isinactive": "F",
+      "links": [],
+      "name": "Akumulasi Bangunan",
+      "number": "17210"
+    },
+    {
+      "internalid": "240",
+      "isinactive": "F",
+      "links": [],
+      "name": "Akumulasi Penyusutan Kendaraan Bermotor",
+      "number": "17215"
+    },
+    {
+      "internalid": "241",
+      "isinactive": "F",
+      "links": [],
+      "name": "Akumulasi Penyusutan Inventaris Kantor",
+      "number": "17220"
+    },
+    {
+      "internalid": "435",
+      "isinactive": "F",
+      "links": [],
+      "name": "Aktiva Lain-Lain",
+      "number": "18000"
+    },
+    {
+      "internalid": "111",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang",
+      "number": "21100"
+    },
+    {
+      "internalid": "245",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang Maybank",
+      "number": "21115"
+    },
+    {
+      "internalid": "425",
+      "isinactive": "F",
+      "links": [],
+      "name": "KMK BNI",
+      "number": "21116"
+    },
+    {
+      "internalid": "426",
+      "isinactive": "F",
+      "links": [],
+      "name": "KI MAY BANK 2021",
+      "number": "21117"
+    },
+    {
+      "internalid": "427",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang Bank Maybank v1",
+      "number": "21118"
+    },
+    {
+      "internalid": "246",
+      "isinactive": "F",
+      "links": [],
+      "name": "KI Maybank 2023",
+      "number": "21120"
+    },
+    {
+      "internalid": "428",
+      "isinactive": "F",
+      "links": [],
+      "name": "KI BNI 2023",
+      "number": "21121"
+    },
+    {
+      "internalid": "210",
+      "isinactive": "F",
+      "links": [],
+      "name": "PPn Keluaran",
+      "number": "25001"
+    },
+    {
+      "internalid": "248",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang PPn Keluaran",
+      "number": "25100"
+    },
+    {
+      "internalid": "423",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang PPh 23",
+      "number": "25105"
+    },
+    {
+      "internalid": "249",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang PPh 25",
+      "number": "25200"
+    },
+    {
+      "internalid": "250",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang PPh 29",
+      "number": "25300"
+    },
+    {
+      "internalid": "253",
+      "isinactive": "F",
+      "links": [],
+      "name": "Hutang Lain-Lainnya",
+      "number": "26100"
+    },
+    {
+      "internalid": "259",
+      "isinactive": "F",
+      "links": [],
+      "name": "Modal Disetor",
+      "number": "30120"
+    },
+    {
+      "internalid": "109",
+      "isinactive": "F",
+      "links": [],
+      "name": "Cumulative Translation Adjustment",
+      "number": "3035"
+    },
+    {
+      "internalid": "53",
+      "isinactive": "F",
+      "links": [],
+      "name": "Opening Balance",
+      "number": "3200"
+    },
+    {
+      "internalid": "52",
+      "isinactive": "F",
+      "links": [],
+      "name": "Laba-Rugi Ditahan",
+      "number": "32100"
+    },
+    {
+      "internalid": "260",
+      "isinactive": "F",
+      "links": [],
+      "name": "Prive",
+      "number": "34100"
+    },
+    {
+      "internalid": "54",
+      "isinactive": "F",
+      "links": [],
+      "name": "Sales",
+      "number": "4000"
+    },
+    {
+      "internalid": "262",
+      "isinactive": "F",
+      "links": [],
+      "name": "Penjualan Barang",
+      "number": "40010"
+    },
+    {
+      "internalid": "263",
+      "isinactive": "F",
+      "links": [],
+      "name": "Penjualan Barang Non PPN",
+      "number": "40020"
+    },
+    {
+      "internalid": "264",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pemungut (Penjualan ke Instasi Pemerintah)",
+      "number": "40030"
+    },
+    {
+      "internalid": "265",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pendapatan Lain",
+      "number": "40040"
+    },
+    {
+      "internalid": "266",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pendapatan Final",
+      "number": "40050"
+    },
+    {
+      "internalid": "302",
+      "isinactive": "F",
+      "links": [],
+      "name": "Sales Discount",
+      "number": "40060"
+    },
+    {
+      "internalid": "420",
+      "isinactive": "F",
+      "links": [],
+      "name": "Potongan Voucher",
+      "number": "40065"
+    },
+    {
+      "internalid": "108",
+      "isinactive": "F",
+      "links": [],
+      "name": "Shipping and Handling",
+      "number": "4050"
+    },
+    {
+      "internalid": "268",
+      "isinactive": "F",
+      "links": [],
+      "name": "Harga Pokok Pembelian",
+      "number": "50100"
+    },
+    {
+      "internalid": "269",
+      "isinactive": "F",
+      "links": [],
+      "name": "Stock Inventory Variance",
+      "number": "50200"
+    },
+    {
+      "internalid": "303",
+      "isinactive": "F",
+      "links": [],
+      "name": "Purchase Discount",
+      "number": "50201"
+    },
+    {
+      "internalid": "121",
+      "isinactive": "F",
+      "links": [],
+      "name": "Retur Pembelian",
+      "number": "50202"
+    },
+    {
+      "internalid": "58",
+      "isinactive": "F",
+      "links": [],
+      "name": "Expenses",
+      "number": "6000"
+    },
+    {
+      "internalid": "281",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Gaji Karyawan",
+      "number": "61110"
+    },
+    {
+      "internalid": "430",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya BPJS Kesehatan",
+      "number": "61115"
+    },
+    {
+      "internalid": "439",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya BPJS TK",
+      "number": "61117"
+    },
+    {
+      "internalid": "412",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya BBM Dexlite (Solar)",
+      "number": "61120"
+    },
+    {
+      "internalid": "411",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Expedisi Angkutan Barang",
+      "number": "61131"
+    },
+    {
+      "internalid": "284",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Iklan dan Promosi",
+      "number": "61140"
+    },
+    {
+      "internalid": "419",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Penukaran Poin",
+      "number": "61145"
+    },
+    {
+      "internalid": "285",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Rekening Telpon,Listrik dan Air",
+      "number": "61150"
+    },
+    {
+      "internalid": "413",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Alat Kebutuhan Toko",
+      "number": "61161"
+    },
+    {
+      "internalid": "287",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Kemasan",
+      "number": "61170"
+    },
+    {
+      "internalid": "288",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Perlengkapan Toko",
+      "number": "61180"
+    },
+    {
+      "internalid": "432",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Operasional Toko",
+      "number": "61185"
+    },
+    {
+      "internalid": "299",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya PPh Final",
+      "number": "61200"
+    },
+    {
+      "internalid": "298",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Pestindo",
+      "number": "61210"
+    },
+    {
+      "internalid": "297",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Umum Lain",
+      "number": "61220"
+    },
+    {
+      "internalid": "296",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Retribusi",
+      "number": "61230"
+    },
+    {
+      "internalid": "295",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Notaris",
+      "number": "61240"
+    },
+    {
+      "internalid": "294",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Asuransi",
+      "number": "61250"
+    },
+    {
+      "internalid": "293",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Materai",
+      "number": "61260"
+    },
+    {
+      "internalid": "292",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Konsultasi",
+      "number": "61270"
+    },
+    {
+      "internalid": "291",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Perizinan",
+      "number": "61280"
+    },
+    {
+      "internalid": "290",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Lain-Lain",
+      "number": "61290"
+    },
+    {
+      "internalid": "417",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Entertaiment",
+      "number": "61291"
+    },
+    {
+      "internalid": "418",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Pajak",
+      "number": "61292"
+    },
+    {
+      "internalid": "289",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Penyusutan Bangunan",
+      "number": "61301"
+    },
+    {
+      "internalid": "421",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Penyusutan Kendaraan",
+      "number": "61302"
+    },
+    {
+      "internalid": "422",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Penyusutan Inventaris Kantor",
+      "number": "61303"
+    },
+    {
+      "internalid": "437",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya bensin/solar, parkir",
+      "number": "61305"
+    },
+    {
+      "internalid": "436",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pajak Penghasilan Perusahaan",
+      "number": "61400"
+    },
+    {
+      "internalid": "274",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pendapatan Jasa Giro",
+      "number": "71110"
+    },
+    {
+      "internalid": "275",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pendapatan Lain - Lain",
+      "number": "71120"
+    },
+    {
+      "internalid": "416",
+      "isinactive": "F",
+      "links": [],
+      "name": "Setoran Parkir",
+      "number": "71121"
+    },
+    {
+      "internalid": "277",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Administrasi Bank",
+      "number": "72110"
+    },
+    {
+      "internalid": "278",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Bunga Bank",
+      "number": "72120"
+    },
+    {
+      "internalid": "279",
+      "isinactive": "F",
+      "links": [],
+      "name": "Biaya Provisi Bank",
+      "number": "72130"
+    },
+    {
+      "internalid": "280",
+      "isinactive": "F",
+      "links": [],
+      "name": "Pajak Jasa giro",
+      "number": "72140"
+    },
+    {
+      "internalid": "410",
+      "isinactive": "F",
+      "links": [],
+      "name": "Prepaid Insurance",
+      "number": "Prepaid Insurance"
+    },
+    {
+      "internalid": "112",
+      "isinactive": "F",
+      "links": [],
+      "name": "Accrued Purchases"
+    },
+    {
+      "internalid": "214",
+      "isinactive": "F",
+      "links": [],
+      "name": "Cost of Goods Sold"
+    },
+    {
+      "internalid": "305",
+      "isinactive": "F",
+      "links": [],
+      "name": "Customer Deposits"
+    },
+    {
+      "internalid": "114",
+      "isinactive": "F",
+      "links": [],
+      "name": "Estimates"
+    },
+    {
+      "internalid": "213",
+      "isinactive": "F",
+      "links": [],
+      "name": "Inventory Asset"
+    },
+    {
+      "internalid": "216",
+      "isinactive": "F",
+      "links": [],
+      "name": "Inventory In Transit"
+    },
+    {
+      "internalid": "124",
+      "isinactive": "F",
+      "links": [],
+      "name": "Opportunities"
+    },
+    {
+      "internalid": "212",
+      "isinactive": "F",
+      "links": [],
+      "name": "PPN Liability ID"
+    },
+    {
+      "internalid": "115",
+      "isinactive": "F",
+      "links": [],
+      "name": "Purchase Orders"
+    },
+    {
+      "internalid": "123",
+      "isinactive": "F",
+      "links": [],
+      "name": "Refunds Payable"
+    },
+    {
+      "internalid": "113",
+      "isinactive": "F",
+      "links": [],
+      "name": "Return Authorizations"
+    },
+    {
+      "internalid": "301",
+      "isinactive": "F",
+      "links": [],
+      "name": "Rounding Gain/Loss"
+    },
+    {
+      "internalid": "116",
+      "isinactive": "F",
+      "links": [],
+      "name": "Sales Orders"
+    },
+    {
+      "internalid": "215",
+      "isinactive": "F",
+      "links": [],
+      "name": "Transfer Orders"
+    },
+    {
+      "internalid": "110",
+      "isinactive": "F",
+      "links": [],
+      "name": "Unapproved Customer Payments"
+    },
+    {
+      "internalid": "117",
+      "isinactive": "F",
+      "links": [],
+      "name": "Unapproved Expense Reports"
+    },
+    {
+      "internalid": "122",
+      "isinactive": "F",
+      "links": [],
+      "name": "Undeposited Funds"
+    },
+    {
+      "internalid": "306",
+      "isinactive": "F",
+      "links": [],
+      "name": "Unrealized Matching Gain/Loss"
+    },
+    {
+      "internalid": "120",
+      "isinactive": "F",
+      "links": [],
+      "name": "{#Vendor Return Authorizations#}"
+    }
+  ],
+  "totalResults": 108
+}
