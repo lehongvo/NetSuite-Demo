@@ -199,10 +199,22 @@ func pickNumber(candidates ...string) float64 {
 }
 
 func newRestletClient() (*rest.RestletClient, error) {
-	consumerKey := envOrDefault("NS_CONSUMER_KEY", "6cd361314fff88eec57bcb3c614cc756dbe04a0e89d2a3ab66e6c64c3dc82737")
-	consumerSecret := envOrDefault("NS_CONSUMER_SECRET", "8978447bead27499f6ee2d6a465c2f9acee6c359fa1623001b62bf504f70d803")
-	accessToken := envOrDefault("NS_ACCESS_TOKEN", "dbc891d00323d50d09ff761b5d91249332beb521fcb7c7fc83376f60682210ad")
-	accessTokenSecret := envOrDefault("NS_ACCESS_TOKEN_SECRET", "437be927859404d5dc9eb861776e0d87e3a791a13255d0d298fcaeac63a51ff8")
+	consumerKey := strings.TrimSpace(os.Getenv("NS_CONSUMER_KEY"))
+	if consumerKey == "" {
+		return nil, errors.New("NS_CONSUMER_KEY is required")
+	}
+	consumerSecret := strings.TrimSpace(os.Getenv("NS_CONSUMER_SECRET"))
+	if consumerSecret == "" {
+		return nil, errors.New("NS_CONSUMER_SECRET is required")
+	}
+	accessToken := strings.TrimSpace(os.Getenv("NS_ACCESS_TOKEN"))
+	if accessToken == "" {
+		return nil, errors.New("NS_ACCESS_TOKEN is required")
+	}
+	accessTokenSecret := strings.TrimSpace(os.Getenv("NS_ACCESS_TOKEN_SECRET"))
+	if accessTokenSecret == "" {
+		return nil, errors.New("NS_ACCESS_TOKEN_SECRET is required")
+	}
 	accountID := strings.TrimSpace(os.Getenv("NS_ACCOUNT"))
 	if accountID == "" {
 		return nil, errors.New("NS_ACCOUNT is required for restlet calls")
