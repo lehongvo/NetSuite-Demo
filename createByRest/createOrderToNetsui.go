@@ -6,9 +6,12 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/joho/godotenv"
 
 	rest "git02.smartosc.com/production/platform-connector/go-rest-netsuite"
 )
@@ -84,6 +87,11 @@ type restletResponse struct {
 }
 
 func main() {
+	// Load .env file from project root
+	if err := loadEnvFile(); err != nil {
+		log.Printf("Warning: Failed to load .env file: %v", err)
+	}
+
 	inputPath := envOrDefault("INPUT_PATH", "data.json")
 
 	order, rawPayload, err := loadOrder(inputPath)
@@ -170,11 +178,8 @@ func buildCashSaleRequest(order Order, rawPayload json.RawMessage) cashSaleReque
 		log.Printf("Using NS_ACCOUNT_ID=%s", accountID)
 	}
 
-	tranID := strings.TrimSpace(os.Getenv("NS_TRAN_ID"))
-	if tranID == "" {
-		tranID = fmt.Sprintf("POS-%d", time.Now().Unix())
-		log.Printf("NS_TRAN_ID not set, generated tranId=%s", tranID)
-	}
+	tranID := fmt.Sprintf("POS-%d", time.Now().Unix())
+	log.Printf("Generated tranId=%s", tranID)
 
 	return cashSaleRequest{
 		Entity:         idRef{InternalID: order.Customer.ID},
@@ -248,4 +253,45 @@ func isDigits(s string) bool {
 		}
 	}
 	return true
+}
+
+// loadEnvFile loads .env file from project root (parent directory)
+func loadEnvFile() error {
+	// Try to find .env file in current directory or parent directory
+	envPaths := []string{
+		".env",           // Current directory
+		"../.env",        // Parent directory (project root)
+		"../../.env",     // Two levels up
+	}
+	
+	for _, envPath := range envPaths {
+		if _, err := os.Stat(envPath); err == nil {
+			if err := godotenv.Load(envPath); err == nil {
+				log.Printf("Loaded .env from %s", envPath)
+				return nil
+			}
+		}
+	}
+	
+	// Try absolute path based on current working directory
+	wd, err := os.Getwd()
+	if err == nil {
+		// If we're in createByRest, go up one level
+		if filepath.Base(wd) == "createByRest" {
+			envPath := filepath.Join(filepath.Dir(wd), ".env")
+			if err := godotenv.Load(envPath); err == nil {
+				log.Printf("Loaded .env from %s", envPath)
+				return nil
+			}
+		} else {
+			// Try current directory
+			envPath := filepath.Join(wd, ".env")
+			if err := godotenv.Load(envPath); err == nil {
+				log.Printf("Loaded .env from %s", envPath)
+				return nil
+			}
+		}
+	}
+	
+	return fmt.Errorf("could not find .env file")
 }

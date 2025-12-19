@@ -14,8 +14,8 @@
       "binnumber": "S5",
       "locationid": "1",
       "locationname": "Pusat",
-      "onhand": "161",
-      "available": "161",
+      "onhand": "40",
+      "available": "40",
       "locationinactive": "F"
     },
     {
@@ -34,8 +34,8 @@
       "binnumber": "S1",
       "locationid": "1",
       "locationname": "Pusat",
-      "onhand": "40",
-      "available": "40",
+      "onhand": "30",
+      "available": "30",
       "locationinactive": "F"
     },
     {
