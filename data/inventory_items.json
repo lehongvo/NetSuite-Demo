@@ -4,22 +4,22 @@
     "costaccountingstatus": "Complete",
     "item": "44246",
     "lastpurchasepricemli": "0",
-    "lastquantityavailablechange": "12/12/2025",
+    "lastquantityavailablechange": "17/12/2025",
     "location": "1",
     "onhandvaluemli": "0",
-    "quantityavailable": "83",
+    "quantityavailable": "59",
     "quantitybackordered": "0",
     "quantitycommitted": "0",
-    "quantityonhand": "83",
+    "quantityonhand": "59",
     "itemId": "MSA - Item Testing Bins",
     "locationname": "Pusat",
-    "updatedat": "2025-12-12 04:39:03 +07:00",
+    "updatedat": "2025-12-17 13:42:25 +07:00",
     "binNumber": [
       {
         "location": "Pusat",
         "binNumber": "S1",
-        "onHand": "20",
-        "available": "20",
+        "onHand": "10",
+        "available": "10",
         "locationActive": "Yes"
       },
       {
@@ -27,13 +27,6 @@
         "binNumber": "S2",
         "onHand": "33",
         "available": "33",
-        "locationActive": "Yes"
-      },
-      {
-        "location": "Pusat",
-        "binNumber": "S5",
-        "onHand": "14",
-        "available": "14",
         "locationActive": "Yes"
       }
     ]

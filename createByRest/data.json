@@ -75,7 +75,7 @@
                     "productId": "44246",
                     "productParentId": "44246",
                     "name": "MSA - Item Testing Bins",
-                    "quantity": 1,
+                    "quantity": 7,
                     "totalDiscount": "0.00000000000000",
                     "totalPrice": "90540.54054054054723",
                     "totalPriceInReport": "100500.00000000000000",
@@ -132,7 +132,7 @@
                     "productId": "44246",
                     "productParentId": "44246",
                     "name": "MSA - Item Testing Bins",
-                    "quantity": 1,
+                    "quantity": 7,
                     "totalDiscount": "0.00000000000000",
                     "totalPrice": "90540.54054054054723",
                     "totalPriceInReport": "100500.00000000000000",
@@ -345,7 +345,7 @@
                     "productId": "44246",
                     "productParentId": "44246",
                     "name": "MSA - Item Testing Bins",
-                    "quantity": 1,
+                    "quantity": 7,
                     "totalDiscount": "0.00000000000000",
                     "totalPrice": "90540.54054054054723",
                     "totalPriceInReport": "100500.00000000000000",
@@ -537,7 +537,7 @@
                 "productParentId": "44246",
                 "name": "MSA - Item Testing Bins",
                 "sku": "MSA - Item Testing Bins",
-                "quantity": 1,
+                "quantity": 7,
                 "price": "100500.00000000000000",
                 "priceIncTax": "100500.00000000000000",
                 "priceExTax": "90540.54054054054723",
@@ -631,7 +631,7 @@
             {
                 "sku": "MSA - Item Testing Bins",
                 "productId": "44246",
-                "quantity": 1,
+                "quantity": 7,
                 "locationId": "1",
                 "uuid": "44246",
                 "productUuid": "44246"
@@ -650,7 +650,7 @@
                 "sku": "MSA - Item Testing Bins",
                 "productId": "44246",
                 "parentId": "44246",
-                "quantity": 1,
+                "quantity": 7,
                 "productName": "MSA - Item Testing Bins"
             }
         ],

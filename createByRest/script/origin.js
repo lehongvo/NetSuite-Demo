@@ -458,7 +458,6 @@
                                     ["binonhand.location", "anyof", locationID]
                                 ],
                                 columns: [
-                                    search.createColumn({ name: "internalid", join: "binOnHand", sort: search.Sort.ASC }),
                                     search.createColumn({ name: "binnumber", join: "binOnHand", label: "Bin Number" }),
                                     search.createColumn({ name: "quantityavailable", join: "binOnHand", label: "Available" })
                                 ]

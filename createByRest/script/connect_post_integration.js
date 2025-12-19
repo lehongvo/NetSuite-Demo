@@ -462,24 +462,59 @@
                                     search.createColumn({ name: "quantityavailable", join: "binOnHand", label: "Available" })
                                 ]
                             });
-                        
+                            
                             let searchResult = itemSearchObj.run();
-                            let remainingQty = quantity;
-                        
-                            searchResult.each(function (result) {
-                                if (remainingQty <= 0) return false; 
-                        
-                                let idBin = result.getValue({ name: "binnumber", join: "binOnHand" });
-                                let qtyAvailable = parseInt(result.getValue({ name: "quantityavailable", join: "binOnHand" }), 10);
-                        
-                                if (qtyAvailable > 0) {
-                                    let qtyToAllocate = Math.min(remainingQty, qtyAvailable);
-                                    allocatedBins.push({ idBin, quantity: qtyToAllocate });
+                            /**
+                             * Bin allocation logic:
+                             * - In try: collect bins with qty > 0 at this location, sort by bin internal ID ASC (oldest first), then allocate quantity across bins.
+                             * - If any error occurs in this sorted-allocation flow, catch will run a simpler fallback using the raw search result without sorting.
+                             */
+                            try {
+                                log.debug('Go try bin allocation fallback');
+                                let allBins = [];
+                                searchResult.each(function (result) {
+                                    let binInternalId = result.getValue({ name: "binnumber", join: "binOnHand" });
+                                    let qtyAvailable = parseInt(result.getValue({ name: "quantityavailable", join: "binOnHand" }), 10);
+                                    
+                                    if (binInternalId && qtyAvailable > 0 && !isNaN(qtyAvailable)) {
+                                        allBins.push({ idBin: binInternalId, qtyAvailable: qtyAvailable });
+                                    }
+                                    return true;
+                                });
+                                
+                                allBins.sort(function(a, b) {
+                                    return parseInt(a.idBin, 10) - parseInt(b.idBin, 10);
+                                });
+                                
+                                log.debug('Bins to allocate (sorted ASC)', JSON.stringify(allBins));
+                                
+                                let remainingQty = quantity;
+                                for (let j = 0; j < allBins.length && remainingQty > 0; j++) {
+                                    let bin = allBins[j];
+                                    let qtyToAllocate = Math.min(remainingQty, bin.qtyAvailable);
+                                    allocatedBins.push({ idBin: bin.idBin, quantity: qtyToAllocate });
                                     remainingQty -= qtyToAllocate;
                                 }
-                        
-                                return true;
-                            });
+                                log.debug('Bins to allocate (sorted ASC)', JSON.stringify(allocatedBins));
+                            } catch (e) {
+                                log.debug('Go catch bin allocation fallback', e);
+                                let remainingQty = quantity;
+
+                                itemSearchObj.run().each(function (result) {
+                                    if (remainingQty <= 0) return false;
+
+                                    let idBin = result.getValue({ name: "binnumber", join: "binOnHand" });
+                                    let qtyAvailable = parseInt(result.getValue({ name: "quantityavailable", join: "binOnHand" }), 10);
+
+                                    if (qtyAvailable > 0 && idBin && !isNaN(qtyAvailable)) {
+                                        let qtyToAllocate = Math.min(remainingQty, qtyAvailable);
+                                        allocatedBins.push({ idBin: idBin, quantity: qtyToAllocate });
+                                        remainingQty -= qtyToAllocate;
+                                    }
+                                    return true;
+                                });
+                                log.debug('Bins to allocate (fallback)', JSON.stringify(allocatedBins));
+                            }
                         }
                         
                         let rate = data.items[i].rate;
@@ -674,4 +709,3 @@
             delete: doDelete,
             };
         });
-        

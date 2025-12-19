@@ -5,27 +5,17 @@
       "href": "https://9342705.suitetalk.api.netsuite.com/services/rest/query/v1/suiteql?limit=1000\u0026offset=0"
     }
   ],
-  "count": 9,
-  "totalResults": 9,
+  "count": 7,
+  "totalResults": 7,
   "items": [
     {
       "itemid": "44246",
-      "binid": "21",
-      "binnumber": "S1",
+      "binid": "38",
+      "binnumber": "S5",
       "locationid": "1",
       "locationname": "Pusat",
-      "onhand": "20",
-      "available": "20",
-      "locationinactive": "F"
-    },
-    {
-      "itemid": "44246",
-      "binid": "43",
-      "binnumber": "S10",
-      "locationid": "1",
-      "locationname": "Pusat",
-      "onhand": "0",
-      "available": "0",
+      "onhand": "161",
+      "available": "161",
       "locationinactive": "F"
     },
     {
@@ -34,28 +24,18 @@
       "binnumber": "S2",
       "locationid": "1",
       "locationname": "Pusat",
-      "onhand": "33",
-      "available": "33",
+      "onhand": "30",
+      "available": "30",
       "locationinactive": "F"
     },
     {
       "itemid": "44246",
-      "binid": "38",
-      "binnumber": "S5",
+      "binid": "21",
+      "binnumber": "S1",
       "locationid": "1",
       "locationname": "Pusat",
-      "onhand": "14",
-      "available": "14",
-      "locationinactive": "F"
-    },
-    {
-      "itemid": "44246",
-      "binid": "19",
-      "binnumber": "Bins Cabang 1",
-      "locationid": "5",
-      "locationname": "Testing Cabang",
-      "onhand": "5",
-      "available": "5",
+      "onhand": "40",
+      "available": "40",
       "locationinactive": "F"
     },
     {
@@ -70,8 +50,18 @@
     },
     {
       "itemid": "44246",
-      "binid": "16",
-      "binnumber": "Cab - Bins A",
+      "binid": "19",
+      "binnumber": "Bins Cabang 1",
+      "locationid": "5",
+      "locationname": "Testing Cabang",
+      "onhand": "5",
+      "available": "5",
+      "locationinactive": "F"
+    },
+    {
+      "itemid": "44246",
+      "binid": "18",
+      "binnumber": "Cab - Bins C",
       "locationid": "6",
       "locationname": "Testing gudang cabang",
       "onhand": "3",
@@ -80,18 +70,8 @@
     },
     {
       "itemid": "44246",
-      "binid": "17",
-      "binnumber": "Cab - Bins B",
-      "locationid": "6",
-      "locationname": "Testing gudang cabang",
-      "onhand": "0",
-      "available": "0",
-      "locationinactive": "F"
-    },
-    {
-      "itemid": "44246",
-      "binid": "18",
-      "binnumber": "Cab - Bins C",
+      "binid": "16",
+      "binnumber": "Cab - Bins A",
       "locationid": "6",
       "locationname": "Testing gudang cabang",
       "onhand": "3",

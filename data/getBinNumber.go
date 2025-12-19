@@ -36,7 +36,8 @@ func main() {
 		"LEFT JOIN ItemBinQuantity ibq ON ibq.bin = b.id " +
 		"WHERE NVL(b.isInactive, 'F') = 'F' AND ibq.item IN ('44246') " +
 		"GROUP BY ibq.item, b.id, b.binNumber, b.location, l.name, l.isInactive, b.sequenceNumber " +
-		"ORDER BY ibq.item, b.sequenceNumber, l.name, b.binNumber"
+		"HAVING SUM(ibq.onhand) > 0 " +
+		"ORDER BY ibq.item, b.id DESC, l.name, b.binNumber"
 
 	req := &suiteql.QueryRequest{
 		Query: query,
