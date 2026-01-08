@@ -1,191 +1,253 @@
 {
     "payload": {
         "storeId": "7702",
-        "shiftId": "53455",
+        "shiftId": "300219",
         "registerId": "12686",
         "outletId": "7395",
-        "outletName": "Pusat",
+        "outletName": "Marina Swalayan",
         "registerName": "Kassa 6",
-        "notifyCustomer": true,
+        "notifyCustomer": false,
         "order": {
             "createdAt": null,
             "cartId": null,
             "country": "ID",
-            "outletName": "Pusat",
+            "outletName": "Marina Swalayan",
             "registerName": "Kassa 6",
             "registerId": "12686",
             "outletId": "7395",
             "locationId": "1",
-            "fulfillmentLocationIds": "1,2",
+            "fulfillmentLocationIds": "1",
             "payments": [
                 {
+                    "id": "9657",
                     "paymentCode": "cash",
                     "paymentName": "Cash",
-                    "amount": "100500.00",
-                    "amountBeforRound": "100500.000000000000",
+                    "amount": "6200.00",
+                    "amountBeforRound": "6200.000000000000",
                     "isChanging": true,
-                    "processedAt": "2025-12-16T06:34:18.703Z",
+                    "processedAt": "2026-01-08T13:17:48.097Z",
                     "type": "sale",
                     "paymentDetails": {
                         "isConvertFromSC": "false",
                         "base_currency": "IDR",
                         "presentment_currency": "IDR",
                         "presentment_exchange_rate": "1",
-                        "app_version": "25.12.17",
+                        "app_version": "25.12.31",
                         "device_info": "",
                         "store_credit_provider": "",
-                        "configs": ""
+                        "configs": "{\"absoluteAmount\":\"0\",\"isPrioritize\":\"true\"}"
                     },
                     "currency": "IDR",
                     "presentmentCurrency": "IDR",
                     "currencyExchangeRate": "1",
                     "presentmentCurrencySymbol": "Rp",
-                    "hashId": "37c63c1f-74c2-48eb-b905-f803b6dbc35e"
+                    "hashId": "22bb1224-b0fa-47cd-b2f0-eb20c36724bb"
                 }
             ],
             "initialPayments": [
                 {
+                    "id": "9657",
                     "paymentCode": "cash",
                     "paymentName": "Cash",
-                    "amount": "100500.00",
-                    "amountBeforRound": "100500.000000000000",
+                    "amount": "6200.00",
+                    "amountBeforRound": "6200.000000000000",
                     "isChanging": true,
-                    "processedAt": "2025-12-16T06:34:18.703Z",
+                    "processedAt": "2026-01-08T13:17:48.097Z",
                     "type": "sale",
                     "paymentDetails": {
                         "isConvertFromSC": "false",
                         "base_currency": "IDR",
                         "presentment_currency": "IDR",
                         "presentment_exchange_rate": "1",
-                        "app_version": "25.12.17",
+                        "app_version": "25.12.31",
                         "device_info": "",
                         "store_credit_provider": "",
-                        "configs": ""
+                        "configs": "{\"absoluteAmount\":\"0\",\"isPrioritize\":\"true\"}"
                     },
                     "currency": "IDR",
                     "presentmentCurrency": "IDR",
                     "currencyExchangeRate": "1",
                     "presentmentCurrencySymbol": "Rp",
-                    "hashId": "37c63c1f-74c2-48eb-b905-f803b6dbc35e"
+                    "hashId": "22bb1224-b0fa-47cd-b2f0-eb20c36724bb"
                 }
             ],
             "items": [
                 {
-                    "uuid": "44246",
-                    "productId": "44246",
-                    "productParentId": "44246",
-                    "name": "MSA - Item Testing Bins",
-                    "quantity": 7,
+                    "uuid": "46969",
+                    "productId": "46969",
+                    "productParentId": "46969",
+                    "name": "Test Wholesale Price",
+                    "quantity": 1,
                     "totalDiscount": "0.00000000000000",
-                    "totalPrice": "100500.00000000000000",
-                    "totalPriceInReport": "100500.00000000000000",
+                    "totalPrice": "",
+                    "totalPriceInReport": "",
                     "requiresShipping": true,
                     "isSplitItem": false,
-                    "isVerifiedQty": false,
+                    "isVerifiedQty": true,
                     "locationId": "1",
-                    "priceIncQty": "100500",
+                    "priceIncQty": "6200",
                     "tax": "0",
-                    "totalTax": "0",
-                    "priceExTax": "100500.00000000000000",
-                    "sku": "MSA - Item Testing Bins",
-                    "barcode": "44246",
-                    "price": "100500.00000000000000",
+                    "totalTax": "614.41441441441441",
+                    "priceExTax": "",
+                    "sku": "Test Wholesale Price",
+                    "barcode": "46969",
+                    "price": "",
                     "type": "simple",
                     "taxable": true,
-                    "productUuid": "44246",
-                    "priceIncTax": "100500.00000000000000",
+                    "productUuid": "46969",
+                    "priceIncTax": "",
                     "isBOGOProduct": false,
-                    "originPrice": "100500.000000",
-                    "productParentUuid": "44246",
-                    "productName": "MSA - Item Testing Bins",
-                    "subtotalPrice": "100500.00000000000000",
+                    "originPrice": "6200.000000",
+                    "productParentUuid": "46969",
+                    "productName": "Test Wholesale Price",
+                    "subtotalPrice": "5585.59",
                     "percentageCommissionTotal": 0,
                     "splitTotal": 0,
-                    "parentId": "44246",
+                    "parentId": "46969",
                     "isDisableRefund": false,
                     "isVariant": false,
                     "productType": "simple",
-                    "originProductName": "MSA - Item Testing Bins",
+                    "originProductName": "Test Wholesale Price",
                     "attributes": {
-                        "barcode": "44246"
+                        "collections": "{\"id\":\"46969_108\",\"catalogId\":\"108\",\"productId\":\"46969\",\"position\":1,\"uuid\":\"46969_108\",\"catalogUuid\":\"108\",\"catalogName\":\"MINUMAN BERSODA\",\"catalogCode\":\"MINUMAN BERSODA\",\"sku\":\"Test Wholesale Price\"}",
+                        "barcode": "46969",
+                        "parent_name": "Test Wholesale Price"
                     },
                     "taxesIncluded": true,
                     "isInStock": true,
-                    "fulfillmentLocationIds": "1,2",
+                    "fulfillmentLocationIds": "1",
+                    "collections": [
+                        {
+                            "id": "46969_108",
+                            "catalogId": "108",
+                            "productId": "46969",
+                            "position": 1,
+                            "uuid": "46969_108",
+                            "catalogUuid": "108",
+                            "catalogName": "MINUMAN BERSODA",
+                            "catalogCode": "MINUMAN BERSODA",
+                            "sku": "Test Wholesale Price"
+                        }
+                    ],
                     "isFreeItem": false,
                     "isBuilder": false,
                     "isRedeem": false,
                     "priceLevel": [
                         {
-                            "id": "89874",
-                            "price": "10000.00",
-                            "quantity": "0"
+                            "id": "93477",
+                            "price": "6100.00",
+                            "quantity": "3"
+                        },
+                        {
+                            "id": "93483",
+                            "price": "6090.00",
+                            "quantity": "5"
+                        },
+                        {
+                            "id": "93512",
+                            "price": "6050.00",
+                            "quantity": "15"
+                        },
+                        {
+                            "id": "93518",
+                            "price": "6010.00",
+                            "quantity": "20"
                         }
                     ],
                     "requireTaxId": false,
-                    "vendor": "bins vendor"
+                    "vendor": "ConnectPOS"
                 }
             ],
             "fulfillmentItems": [
                 {
-                    "uuid": "44246",
-                    "productId": "44246",
-                    "productParentId": "44246",
-                    "name": "MSA - Item Testing Bins",
-                    "quantity": 7,
+                    "uuid": "46969",
+                    "productId": "46969",
+                    "productParentId": "46969",
+                    "name": "Test Wholesale Price",
+                    "quantity": 1,
                     "totalDiscount": "0.00000000000000",
-                    "totalPrice": "100500.00000000000000",
-                    "totalPriceInReport": "100500.00000000000000",
+                    "totalPrice": "",
+                    "totalPriceInReport": "",
                     "requiresShipping": true,
                     "isSplitItem": false,
-                    "isVerifiedQty": false,
+                    "isVerifiedQty": true,
                     "locationId": "1",
-                    "priceIncQty": "100500",
+                    "priceIncQty": "6200",
                     "tax": "0",
-                    "totalTax": "0",
-                    "priceExTax": "100500.00000000000000",
-                    "sku": "MSA - Item Testing Bins",
-                    "barcode": "44246",
-                    "price": "100500.00000000000000",
+                    "totalTax": "614.41441441441441",
+                    "priceExTax": "",
+                    "sku": "Test Wholesale Price",
+                    "barcode": "46969",
+                    "price": "",
                     "type": "simple",
                     "taxable": true,
-                    "productUuid": "44246",
-                    "priceIncTax": "100500.00000000000000",
+                    "productUuid": "46969",
+                    "priceIncTax": "",
                     "isBOGOProduct": false,
-                    "originPrice": "100500.000000",
-                    "productParentUuid": "44246",
-                    "productName": "MSA - Item Testing Bins",
-                    "subtotalPrice": "100500.00000000000000",
+                    "originPrice": "6200.000000",
+                    "productParentUuid": "46969",
+                    "productName": "Test Wholesale Price",
+                    "subtotalPrice": "5585.59",
                     "percentageCommissionTotal": 0,
                     "splitTotal": 0,
-                    "parentId": "44246",
+                    "parentId": "46969",
                     "isDisableRefund": false,
                     "isVariant": false,
                     "productType": "simple",
-                    "originProductName": "MSA - Item Testing Bins",
+                    "originProductName": "Test Wholesale Price",
                     "attributes": {
-                        "barcode": "44246"
+                        "collections": "{\"id\":\"46969_108\",\"catalogId\":\"108\",\"productId\":\"46969\",\"position\":1,\"uuid\":\"46969_108\",\"catalogUuid\":\"108\",\"catalogName\":\"MINUMAN BERSODA\",\"catalogCode\":\"MINUMAN BERSODA\",\"sku\":\"Test Wholesale Price\"}",
+                        "barcode": "46969",
+                        "parent_name": "Test Wholesale Price"
                     },
                     "taxesIncluded": true,
                     "isInStock": true,
-                    "fulfillmentLocationIds": "1,2",
+                    "fulfillmentLocationIds": "1",
+                    "collections": [
+                        {
+                            "id": "46969_108",
+                            "catalogId": "108",
+                            "productId": "46969",
+                            "position": 1,
+                            "uuid": "46969_108",
+                            "catalogUuid": "108",
+                            "catalogName": "MINUMAN BERSODA",
+                            "catalogCode": "MINUMAN BERSODA",
+                            "sku": "Test Wholesale Price"
+                        }
+                    ],
                     "isFreeItem": false,
                     "isBuilder": false,
                     "isRedeem": false,
                     "priceLevel": [
                         {
-                            "id": "89874",
-                            "price": "10000.00",
-                            "quantity": "0"
+                            "id": "93477",
+                            "price": "6100.00",
+                            "quantity": "3"
+                        },
+                        {
+                            "id": "93483",
+                            "price": "6090.00",
+                            "quantity": "5"
+                        },
+                        {
+                            "id": "93512",
+                            "price": "6050.00",
+                            "quantity": "15"
+                        },
+                        {
+                            "id": "93518",
+                            "price": "6010.00",
+                            "quantity": "20"
                         }
                     ],
                     "requireTaxId": false,
-                    "vendor": "bins vendor"
+                    "vendor": "ConnectPOS"
                 }
             ],
             "refundItems": [],
-            "totalPrice": "100500.00",
-            "totalPaid": "100500.00",
+            "totalPrice": "6200.00",
+            "totalPaid": "6200.00",
             "discountApplications": [],
             "discountCodes": [],
             "discountGiftCards": [],
@@ -239,19 +301,18 @@
                 ],
                 "defaultBilling": "29779",
                 "defaultShipping": "29779",
-                "note": " Test",
+                "note": "Test",
                 "currency": "IDR",
                 "status": "ENABLED",
-                "groupId": "3",
+                "groupId": "407",
                 "viewId": "1",
                 "company": "ConnectPOS",
                 "uuid": "29803",
                 "createdAt": "2024-06-28T04:16:00Z",
                 "updatedAt": "2024-06-28T04:16:00Z",
-                "ordersCount": 28860,
+                "ordersCount": 129360,
                 "websiteId": "1",
                 "storeCreditBalance": "0.000000",
-                "timeStamp": 1719548160000,
                 "gender": "female",
                 "attributes": [
                     {
@@ -261,8 +322,8 @@
                     }
                 ],
                 "dob": "1999-10-30",
-                "search": ",Test,Customer 1,taufanfachri@gmail.com,Test Customer 1,Customer 1 Test,ConnectPOS, Test,0123456789,123,7777,123,7777",
-                "groupName": "Retail"
+                "search": ",Test,Customer 1,taufanfachri@gmail.com,Test Customer 1,Customer 1 Test,ConnectPOS,Test,0123456789,123,7777",
+                "groupName": "Member Marina Swalayan"
             },
             "shippingAddress": {
                 "firstName": "Test",
@@ -274,7 +335,8 @@
                 "countryCode": "ID",
                 "countryName": "ID",
                 "province": "Sulawesi Tenggara",
-                "provinceId": "0",
+                "provinceId": "30000",
+                "provinceCode": "SG",
                 "zip": "-",
                 "phone": "-",
                 "isOutletAddress": true
@@ -299,8 +361,8 @@
                 "isDefaultAddress": true
             },
             "totalDiscounts": "0.00",
-            "totalTax": "0",
-            "subtotalPrice": "100500.00",
+            "totalTax": "614.41",
+            "subtotalPrice": "6200.00",
             "fulfillmentStatus": "fulfilled",
             "shippingMethod": null,
             "totalShipping": null,
@@ -314,19 +376,19 @@
             "note": "",
             "taxLines": [
                 {
-                    "id": "b2964e41-4aa0-4cbc-8e96-502d011ae679",
-                    "rate": "0",
-                    "price": "0",
-                    "title": "Test",
-                    "taxClassId": "b2964e41-4aa0-4cbc-8e96-502d011ae679",
+                    "id": "3fcc72eb-1ba7-4f16-9d7f-a9ae3902130d",
+                    "rate": "0.11",
+                    "price": "614.41",
+                    "title": "PPN_ID:S-ID",
+                    "taxClassId": "3fcc72eb-1ba7-4f16-9d7f-a9ae3902130d",
                     "code": "ID",
                     "isUsed": true,
                     "externalId": "6"
                 }
             ],
-            "hashId": "db8bdcd7-c89b-4504-bfde-703a7dcd37e9",
-            "subtotalIncTax": "100500.00",
-            "subtotalExTax": "100500.00000000000000",
+            "hashId": "7ec5ef9b-b366-487c-ac75-10f25ee3b9ba",
+            "subtotalIncTax": "6200.00",
+            "subtotalExTax": "5585.59",
             "remain": "0.000",
             "requestBy": "",
             "requestByName": "",
@@ -341,59 +403,89 @@
             "staffNote": "",
             "commissionItems": [
                 {
-                    "uuid": "44246",
-                    "productId": "44246",
-                    "productParentId": "44246",
-                    "name": "MSA - Item Testing Bins",
-                    "quantity": 7,
+                    "uuid": "46969",
+                    "productId": "46969",
+                    "productParentId": "46969",
+                    "name": "Test Wholesale Price",
+                    "quantity": 1,
                     "totalDiscount": "0.00000000000000",
-                    "totalPrice": "100500.00000000000000",
-                    "totalPriceInReport": "100500.00000000000000",
+                    "totalPrice": "",
+                    "totalPriceInReport": "",
                     "requiresShipping": true,
                     "isSplitItem": false,
-                    "isVerifiedQty": false,
+                    "isVerifiedQty": true,
                     "locationId": "1",
-                    "priceIncQty": "100500",
+                    "priceIncQty": "6200",
                     "tax": "0",
-                    "totalTax": "0",
-                    "priceExTax": "100500.00000000000000",
-                    "sku": "MSA - Item Testing Bins",
-                    "barcode": "44246",
-                    "price": "100500.00000000000000",
+                    "totalTax": "614.41441441441441",
+                    "priceExTax": "",
+                    "sku": "Test Wholesale Price",
+                    "barcode": "46969",
+                    "price": "",
                     "type": "simple",
                     "taxable": true,
-                    "productUuid": "44246",
-                    "priceIncTax": "100500.00000000000000",
+                    "productUuid": "46969",
+                    "priceIncTax": "",
                     "isBOGOProduct": false,
-                    "originPrice": "100500.000000",
-                    "productParentUuid": "44246",
-                    "productName": "MSA - Item Testing Bins",
-                    "subtotalPrice": "100500.00000000000000",
+                    "originPrice": "6200.000000",
+                    "productParentUuid": "46969",
+                    "productName": "Test Wholesale Price",
+                    "subtotalPrice": "5585.59",
                     "percentageCommissionTotal": 0,
                     "splitTotal": 0,
-                    "parentId": "44246",
+                    "parentId": "46969",
                     "isDisableRefund": false,
                     "isVariant": false,
                     "productType": "simple",
-                    "originProductName": "MSA - Item Testing Bins",
+                    "originProductName": "Test Wholesale Price",
                     "attributes": {
-                        "barcode": "44246"
+                        "collections": "{\"id\":\"46969_108\",\"catalogId\":\"108\",\"productId\":\"46969\",\"position\":1,\"uuid\":\"46969_108\",\"catalogUuid\":\"108\",\"catalogName\":\"MINUMAN BERSODA\",\"catalogCode\":\"MINUMAN BERSODA\",\"sku\":\"Test Wholesale Price\"}",
+                        "barcode": "46969",
+                        "parent_name": "Test Wholesale Price"
                     },
                     "taxesIncluded": true,
                     "isInStock": true,
-                    "fulfillmentLocationIds": "1,2",
+                    "fulfillmentLocationIds": "1",
+                    "collections": [
+                        {
+                            "id": "46969_108",
+                            "catalogId": "108",
+                            "productId": "46969",
+                            "position": 1,
+                            "uuid": "46969_108",
+                            "catalogUuid": "108",
+                            "catalogName": "MINUMAN BERSODA",
+                            "catalogCode": "MINUMAN BERSODA",
+                            "sku": "Test Wholesale Price"
+                        }
+                    ],
                     "isFreeItem": false,
                     "isBuilder": false,
                     "isRedeem": false,
                     "priceLevel": [
                         {
-                            "id": "89874",
-                            "price": "10000.00",
-                            "quantity": "0"
+                            "id": "93477",
+                            "price": "6100.00",
+                            "quantity": "3"
+                        },
+                        {
+                            "id": "93483",
+                            "price": "6090.00",
+                            "quantity": "5"
+                        },
+                        {
+                            "id": "93512",
+                            "price": "6050.00",
+                            "quantity": "15"
+                        },
+                        {
+                            "id": "93518",
+                            "price": "6010.00",
+                            "quantity": "20"
                         }
                     ],
                     "requireTaxId": false,
-                    "vendor": "bins vendor"
+                    "vendor": "ConnectPOS"
                 }
             ],
             "locale": "",
@@ -410,7 +502,7 @@
             "customShippingData": null,
             "splitOrders": null,
             "additionalData": {
-                "app_version": "25.12.17",
+                "app_version": "25.12.31",
                 "device_info": ""
             },
             "isEstimation": false,
@@ -424,270 +516,6 @@
             "serviceFees": [],
             "surchargeFees": []
         },
-        "generatePOSNumber": false
-    },
-    "response": {
-        "id": "f00646a1-ea06-4b84-948c-57484cbf4e90",
-        "customer": {
-            "id": "29803",
-            "firstName": "Test",
-            "lastName": "Customer 1",
-            "email": "taufanfachri@gmail.com",
-            "phone": "0123456789",
-            "addresses": [
-                {
-                    "id": "29779",
-                    "customerId": "29803",
-                    "firstName": "Test Customer",
-                    "lastName": ".",
-                    "phone": "7777888999",
-                    "address1": "Handico Pham Hung",
-                    "address2": "Nam Tu Liem",
-                    "city": "Test",
-                    "country": "Indonesia",
-                    "countryCode": "ID",
-                    "province": "SG",
-                    "provinceId": "SG",
-                    "provinceCode": "SG",
-                    "zip": "123",
-                    "isDefaultAddress": true,
-                    "uuid": "29779",
-                    "customerUuid": "29779"
-                },
-                {
-                    "id": "29880",
-                    "customerId": "29803",
-                    "firstName": "Huong Test Customer",
-                    "lastName": ".",
-                    "address1": "Trung Thanh",
-                    "address2": "Thanh Thuy",
-                    "city": "Surrey",
-                    "country": "United Kingdom",
-                    "countryCode": "GB",
-                    "province": "Surrey",
-                    "provinceId": "Surrey",
-                    "provinceCode": "Surrey",
-                    "zip": "7777",
-                    "uuid": "29880",
-                    "customerUuid": "29880"
-                }
-            ],
-            "defaultBilling": "29779",
-            "defaultShipping": "29779",
-            "currency": "IDR",
-            "note": " Test",
-            "ordersCount": 28860,
-            "status": "ENABLED",
-            "dob": "1999-10-30",
-            "groupId": "3",
-            "viewId": "1",
-            "websiteId": "1",
-            "createdAt": "2024-06-28T04:16:00Z",
-            "updatedAt": "2024-06-28T04:16:00Z",
-            "uuid": "29803",
-            "company": "ConnectPOS",
-            "attributes": [
-                {
-                    "code": "gender",
-                    "value": "female",
-                    "label": "gender"
-                }
-            ],
-            "storeCreditBalance": "0.000000",
-            "gender": "female",
-            "groupName": "Retail"
-        },
-        "billingAddress": {
-            "id": "29779",
-            "customerId": "29803",
-            "firstName": "Test Customer",
-            "lastName": ".",
-            "phone": "7777888999",
-            "address1": "Handico Pham Hung",
-            "address2": "Nam Tu Liem",
-            "city": "Test",
-            "country": "Indonesia",
-            "countryCode": "ID",
-            "province": "SG",
-            "provinceId": "SG",
-            "provinceCode": "SG",
-            "zip": "123",
-            "isDefaultAddress": true,
-            "uuid": "29779",
-            "customerUuid": "29779"
-        },
-        "shippingAddress": {
-            "firstName": "Test",
-            "lastName": "Customer 1",
-            "phone": "-",
-            "address1": "Jl Bunggasi No 9 Andonohu",
-            "city": "Kota Kendari",
-            "country": "ID",
-            "countryCode": "ID",
-            "countryName": "ID",
-            "province": "Sulawesi Tenggara",
-            "provinceId": "0",
-            "zip": "-",
-            "isOutletAddress": true
-        },
-        "items": [
-            {
-                "id": "0049030e-9189-4576-b3ac-68e7a9d8121e",
-                "productId": "44246",
-                "productParentId": "44246",
-                "name": "MSA - Item Testing Bins",
-                "sku": "MSA - Item Testing Bins",
-                "quantity": 7,
-                "price": "100500.00000000000000",
-                "priceIncTax": "100500.00000000000000",
-                "priceExTax": "100500.00000000000000",
-                "taxable": true,
-                "totalDiscount": "0.00000000000000",
-                "subtotalPrice": "100500.00000000000000",
-                "tax": "0",
-                "totalTax": "0",
-                "totalPrice": "100500.00000000000000",
-                "type": "simple",
-                "requiresShipping": true,
-                "locationId": "1",
-                "uuid": "44246",
-                "productUuid": "44246",
-                "productParentUuid": "44246",
-                "vendor": "bins vendor",
-                "productType": "simple",
-                "attributes": {
-                    "barcode": "44246"
-                },
-                "taxesIncluded": true,
-                "totalPriceInReport": "100500.00000000000000",
-                "originPrice": "100500.000000",
-                "preRefundedQuantity": 1,
-                "priceLevel": [
-                    {
-                        "id": "89874",
-                        "price": "10000.00",
-                        "quantity": "0"
-                    }
-                ],
-                "itemStatus": "ordered",
-                "barcode": "44246"
-            }
-        ],
-        "currency": "IDR",
-        "phone": "0123456789",
-        "email": "taufanfachri@gmail.com",
-        "subtotalPrice": "100500.00",
-        "subtotalIncTax": "100500.00",
-        "subtotalExTax": "100500.00000000000000",
-        "totalTax": "0",
-        "totalDiscounts": "0.00",
-        "totalPrice": "100500.00",
-        "status": "paid",
-        "fulfillmentStatus": "fulfilled",
-        "locationId": "1",
-        "viewId": "1",
-        "payments": [
-            {
-                "paymentCode": "cash",
-                "paymentName": "Cash",
-                "amount": "100500.00",
-                "type": "sale",
-                "processedAt": "2025-12-16T06:34:18.703Z",
-                "paymentDetails": {
-                    "app_version": "25.12.17",
-                    "base_currency": "IDR",
-                    "configs": "",
-                    "device_info": "",
-                    "isConvertFromSC": "false",
-                    "presentment_currency": "IDR",
-                    "presentment_exchange_rate": "1",
-                    "store_credit_provider": ""
-                },
-                "currency": "IDR",
-                "presentmentCurrency": "IDR",
-                "currencyExchangeRate": "1",
-                "presentmentCurrencySymbol": "Rp",
-                "hashId": "37c63c1f-74c2-48eb-b905-f803b6dbc35e"
-            }
-        ],
-        "taxesIncluded": true,
-        "shiftId": "53455",
-        "cashier": "marinaswalayan",
-        "cashierName": "Marina Swalayan",
-        "source": "in_store",
-        "taxLines": [
-            {
-                "price": "0",
-                "rate": "0",
-                "title": "Test",
-                "code": "ID",
-                "tax_class_id": "b2964e41-4aa0-4cbc-8e96-502d011ae679",
-                "external_id": "6"
-            }
-        ],
-        "isAutoFulfillment": true,
-        "state": "completed",
-        "fulfillmentItems": [
-            {
-                "sku": "MSA - Item Testing Bins",
-                "productId": "44246",
-                "quantity": 7,
-                "locationId": "1",
-                "uuid": "44246",
-                "productUuid": "44246"
-            }
-        ],
-        "createdAt": "2025-12-16T06:34:23.726725186Z",
-        "updatedAt": "2025-12-16T06:34:23.726725612Z",
-        "country": "ID",
-        "priceGroup": "Default",
-        "hashId": "db8bdcd7-c89b-4504-bfde-703a7dcd37e9",
-        "checkHashId": "db8bdcd7-c89b-4504-bfde-703a7dcd37e9",
-        "outletId": "7395",
-        "registerId": "12686",
-        "commissionItems": [
-            {
-                "sku": "MSA - Item Testing Bins",
-                "productId": "44246",
-                "parentId": "44246",
-                "quantity": 7,
-                "productName": "MSA - Item Testing Bins"
-            }
-        ],
-        "totalPaid": "100500.00",
-        "fulfilledAt": "2025-12-16T06:34:23.765508509Z",
-        "currencyExchangeRate": "1",
-        "outletName": "Pusat",
-        "registerName": "Kassa 6",
-        "additionalData": {
-            "app_version": "25.12.17",
-            "device_info": ""
-        },
-        "initialPayments": [
-            {
-                "paymentCode": "cash",
-                "paymentName": "Cash",
-                "amount": "100500.00",
-                "type": "sale",
-                "processedAt": "2025-12-16T06:34:18.703Z",
-                "paymentDetails": {
-                    "app_version": "25.12.17",
-                    "base_currency": "IDR",
-                    "configs": "",
-                    "device_info": "",
-                    "isConvertFromSC": "false",
-                    "presentment_currency": "IDR",
-                    "presentment_exchange_rate": "1",
-                    "store_credit_provider": ""
-                },
-                "currency": "IDR",
-                "presentmentCurrency": "IDR",
-                "currencyExchangeRate": "1",
-                "presentmentCurrencySymbol": "Rp",
-                "hashId": "37c63c1f-74c2-48eb-b905-f803b6dbc35e"
-            }
-        ],
-        "storeName": "Marina Supermarket",
-        "storeId": "7702"
+        "generatePOSNumber": true
     }
 }

@@ -67,12 +67,12 @@ type idRef struct {
 }
 
 type cashSaleItem struct {
-	ItemID   string  `json:"itemid"`
-	Quantity float64 `json:"quantity"`
-	Rate     float64 `json:"rate"`
-	Amount   float64 `json:"amount"`
-	GrossAmt float64 `json:"grossAmt,omitempty"`
-	TaxCode  string  `json:"taxCode,omitempty"`
+	ItemID   string   `json:"itemid"`
+	Quantity float64  `json:"quantity"`
+	Rate     *float64 `json:"rate,omitempty"`     // Use pointer to allow null
+	Amount   *float64 `json:"amount,omitempty"`   // Use pointer to allow null
+	GrossAmt *float64 `json:"grossAmt,omitempty"`
+	TaxCode  string   `json:"taxCode,omitempty"`
 }
 
 type restletBody struct {
@@ -158,14 +158,14 @@ func buildCashSaleRequest(order Order, rawPayload json.RawMessage) cashSaleReque
 
 	items := make([]cashSaleItem, 0, len(order.Items))
 	for _, it := range order.Items {
-		rate := pickNumber(it.PriceIncTax, it.Price, it.TotalPrice)
-		amount := pickNumber(it.PriceIncTax, it.TotalPrice, it.Price)
+		// DON'T set rate and amount (nil pointers won't be serialized)
+		// This will reproduce "Please enter a value for amount" error
 		items = append(items, cashSaleItem{
 			ItemID:   it.ProductID,
 			Quantity: it.Quantity,
-			Rate:     rate,
-			Amount:   amount,
-			GrossAmt: amount,
+			Rate:     nil, // Don't set rate
+			Amount:   nil, // Don't set amount
+			GrossAmt: nil,
 			TaxCode:  taxCode,
 		})
 	}
@@ -224,7 +224,7 @@ func newRestletClient() (*rest.RestletClient, error) {
 	if accountID == "" {
 		return nil, errors.New("NS_ACCOUNT is required for restlet calls")
 	}
-	scriptID := envOrDefault("NS_RESTLET_SCRIPT_ID", "3266")
+	scriptID := envOrDefault("NS_RESTLET_SCRIPT_ID", "809")
 
 	return rest.NewRestletClient(
 		consumerKey,
