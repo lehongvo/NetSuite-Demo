@@ -67,12 +67,12 @@ type idRef struct {
 }
 
 type cashSaleItem struct {
-	ItemID   string   `json:"itemid"`
-	Quantity float64  `json:"quantity"`
-	Rate     *float64 `json:"rate,omitempty"`     // Use pointer to allow null
-	Amount   *float64 `json:"amount,omitempty"`   // Use pointer to allow null
-	GrossAmt *float64 `json:"grossAmt,omitempty"`
-	TaxCode  string   `json:"taxCode,omitempty"`
+	ItemID   string  `json:"itemid"`
+	Quantity float64 `json:"quantity"`
+	Rate     float64 `json:"rate,omitempty"`
+	Amount   float64 `json:"amount,omitempty"`
+	GrossAmt float64 `json:"grossAmt,omitempty"`
+	TaxCode  string  `json:"taxCode,omitempty"`
 }
 
 type restletBody struct {
@@ -158,14 +158,13 @@ func buildCashSaleRequest(order Order, rawPayload json.RawMessage) cashSaleReque
 
 	items := make([]cashSaleItem, 0, len(order.Items))
 	for _, it := range order.Items {
-		// DON'T set rate and amount (nil pointers won't be serialized)
-		// This will reproduce "Please enter a value for amount" error
+		// Only send rate and taxCode, NO amount/grossAmt to reproduce amount error
+		rate := pickNumber(it.PriceIncTax, it.Price, it.TotalPrice)
 		items = append(items, cashSaleItem{
 			ItemID:   it.ProductID,
 			Quantity: it.Quantity,
-			Rate:     nil, // Don't set rate
-			Amount:   nil, // Don't set amount
-			GrossAmt: nil,
+			Rate:     rate,
+			// Amount and GrossAmt omitted to reproduce "Please enter a value for amount" error
 			TaxCode:  taxCode,
 		})
 	}

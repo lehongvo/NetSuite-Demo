@@ -1,0 +1,58 @@
+{
+    "data": {
+        "type": "createCashSale",
+        "data": {
+            "currency": {
+                "locale": {},
+                "symbolPlacement": {},
+                "internalId": "1"
+            },
+            "email": "nonmember@gmail.com",
+            "entity": {
+                "internalId": "1585"
+            },
+            "externalId": "238dbf2c-7f94-4846-b191-6879f65a72ee",
+            "items": [
+                {
+                    "amount": "25300.000000",
+                    "itemid": "45619",
+                    "quantity": "1",
+                    "grossAmt": "25300.000000",
+                    "location": "1",
+                    "price": "-1",
+                    "rate": "25300"
+                }
+            ],
+            "location": {
+                "internalId": "1",
+                "type": "location"
+            },
+            "source": "in_store",
+            "subsidiary": {
+                "country": {}
+            },
+            "tranId": "MRS24402618",
+            "canHaveStackable": true,
+            "currencyName": "IDR",
+            "isTaxable": true,
+            "undepFunds": true,
+            "transDate": "08/01/2026",
+            "payments": [
+                {
+                    "paymentName": "Cash",
+                    "amount": "50000.00"
+                },
+                {
+                    "paymentName": "Cash",
+                    "amount": "24700.00"
+                }
+            ]
+        }
+    },
+    "level": "info",
+    "method": "Create",
+    "msg": "[ORDER ACTION CREATE] Create rest request!",
+    "service": "cash_sale",
+    "shop": "Marina LIVE",
+    "time": "2026-01-08T20:30:12Z"
+}
