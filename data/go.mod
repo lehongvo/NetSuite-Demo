@@ -14,8 +14,8 @@ replace git02.smartosc.com/production/go-shopify => git02.smartosc.com/productio
 
 require (
 	git02.smartosc.com/production/dragonfly v0.0.0-00010101000000-000000000000
-	git02.smartosc.com/production/pbtypes v0.0.0-20251215074915-352a701106b9
-	git02.smartosc.com/production/platform-connector/go-netsuite v0.0.0-20251215064427-5a9259c58798
+	git02.smartosc.com/production/pbtypes v0.0.0-20251222031004-2861db216221
+	git02.smartosc.com/production/platform-connector/go-netsuite v0.0.0-20251222030910-4bddf29aab04
 )
 
 require (

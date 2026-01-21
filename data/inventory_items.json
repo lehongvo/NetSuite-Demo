@@ -1,100 +1,36 @@
-[
-  {
-    "averagecostmli": "0",
-    "costaccountingstatus": "Complete",
-    "item": "44246",
-    "lastpurchasepricemli": "0",
-    "lastquantityavailablechange": "17/12/2025",
-    "location": "1",
-    "onhandvaluemli": "0",
-    "quantityavailable": "59",
-    "quantitybackordered": "0",
-    "quantitycommitted": "0",
-    "quantityonhand": "59",
-    "itemId": "MSA - Item Testing Bins",
-    "locationname": "Pusat",
-    "updatedat": "2025-12-17 13:42:25 +07:00",
-    "binNumber": [
-      {
-        "location": "Pusat",
-        "binNumber": "S1",
-        "onHand": "10",
-        "available": "10",
-        "locationActive": "Yes"
-      },
-      {
-        "location": "Pusat",
-        "binNumber": "S2",
-        "onHand": "33",
-        "available": "33",
-        "locationActive": "Yes"
-      }
-    ]
-  },
-  {
-    "averagecostmli": "20",
-    "costaccountingstatus": "Complete",
-    "item": "44246",
-    "lastpurchasepricemli": "20",
-    "lastquantityavailablechange": "19/6/2025",
-    "location": "5",
-    "onhandvaluemli": "660",
-    "quantityavailable": "33",
-    "quantitybackordered": "0",
-    "quantitycommitted": "0",
-    "quantityonhand": "33",
-    "quantityonorder": "10",
-    "itemId": "MSA - Item Testing Bins",
-    "locationname": "Testing Cabang",
-    "updatedat": "2025-06-19 16:21:43 +07:00",
-    "binNumber": [
-      {
-        "location": "Testing Cabang",
-        "binNumber": "Bins Cabang 1",
-        "onHand": "5",
-        "available": "5",
-        "locationActive": "Yes"
-      },
-      {
-        "location": "Testing Cabang",
-        "binNumber": "Bins Cabang 2",
-        "onHand": "27",
-        "available": "27",
-        "locationActive": "Yes"
-      }
-    ]
-  },
-  {
-    "averagecostmli": "0",
-    "costaccountingstatus": "Complete",
-    "item": "44246",
-    "lastpurchasepricemli": "0",
-    "lastquantityavailablechange": "4/6/2025",
-    "location": "6",
-    "onhandvaluemli": "0",
-    "quantityavailable": "6",
-    "quantitybackordered": "0",
-    "quantitycommitted": "0",
-    "quantityonhand": "6",
-    "quantityonorder": "24",
-    "itemId": "MSA - Item Testing Bins",
-    "locationname": "Testing gudang cabang",
-    "updatedat": "2025-06-04 14:35:44 +07:00",
-    "binNumber": [
-      {
-        "location": "Testing gudang cabang",
-        "binNumber": "Cab - Bins A",
-        "onHand": "3",
-        "available": "3",
-        "locationActive": "Yes"
-      },
-      {
-        "location": "Testing gudang cabang",
-        "binNumber": "Cab - Bins C",
-        "onHand": "3",
-        "available": "3",
-        "locationActive": "Yes"
-      }
-    ]
-  }
-]
+{
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://9342705.suitetalk.api.netsuite.com/services/rest/query/v1/suiteql?limit=1000\u0026offset=0"
+    }
+  ],
+  "count": 4,
+  "items": [
+    {
+      "displayname": "41946",
+      "internalid": "41946",
+      "itemid": "Item Testing 5",
+      "links": []
+    },
+    {
+      "displayname": "SKUTESbins004",
+      "internalid": "47052",
+      "itemid": "MSA - Item Testing Bins4",
+      "links": []
+    },
+    {
+      "displayname": "10000111",
+      "internalid": "47733",
+      "itemid": "Testing Item Bins 1",
+      "links": []
+    },
+    {
+      "displayname": "10000112",
+      "internalid": "47735",
+      "itemid": "Testing Item Bins 2",
+      "links": []
+    }
+  ],
+  "totalResults": 4
+}

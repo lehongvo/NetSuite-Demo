@@ -160,8 +160,9 @@ func buildCashSaleRequest(order Order, rawPayload json.RawMessage) cashSaleReque
 		memo = "POS Order"
 	}
 
+	// Get taxCode from order if available, otherwise let NetSuite use item's default
 	taxCode := ""
-	if len(order.TaxLines) > 0 {
+	if len(order.TaxLines) > 0 && order.TaxLines[0].ExternalID != "" {
 		taxCode = order.TaxLines[0].ExternalID
 	}
 

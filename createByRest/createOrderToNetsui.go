@@ -123,6 +123,11 @@ func main() {
 	}
 
 	log.Printf("Restlet status=%s internalid=%v message=%v", resp.Status, resp.InternalID, resp.Message)
+	
+	// Log full response object as JSON
+	respJSON, _ := json.MarshalIndent(resp, "", "  ")
+	log.Printf("Full response: %s", string(respJSON))
+	
 	log.Printf("Using tranId=%s (done)", req.TranId)
 }
 
@@ -151,8 +156,9 @@ func buildCashSaleRequest(order Order, rawPayload json.RawMessage) cashSaleReque
 		memo = "POS Order"
 	}
 
+	// Get taxCode from order if available, otherwise let NetSuite use item's default
 	taxCode := ""
-	if len(order.TaxLines) > 0 {
+	if len(order.TaxLines) > 0 && order.TaxLines[0].ExternalID != "" {
 		taxCode = order.TaxLines[0].ExternalID
 	}
 
