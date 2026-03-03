@@ -13,12 +13,13 @@ import (
 	"git02.smartosc.com/production/platform-connector/go-netsuite/suiteql"
 )
 
-// listInternalIdPayload represents the JSON structure in data/listInternalId.json.
+// searchPayload represents the JSON structure for product search.
+// Single array containing both internalId (numeric strings) and upcCodes (non-numeric strings).
 // {
-//   "listInternalId": ["41946", "47733", "47735"]
+//   "listInternalIdOrUpcCode": ["41946", "47733", "47735", "47052", "SKUTES0006A"]
 // }
-type listInternalIdPayload struct {
-	ListInternalId []string `json:"listInternalId"`
+type searchPayload struct {
+	ListInternalIdOrUpcCode []string `json:"listInternalIdOrUpcCode"`
 }
 
 func main() {
@@ -33,24 +34,47 @@ func main() {
 		inputPath = "listInternalId.json"
 	}
 
-	itemIds, err := loadItemIds(inputPath)
+	searchItems, err := loadSearchItems(inputPath)
 	if err != nil {
-		log.Fatalf("load item ids error: %v", err)
+		log.Fatalf("load search items error: %v", err)
 	}
-	if len(itemIds) == 0 {
-		log.Fatalf("no item internal IDs found in %s", inputPath)
+	if len(searchItems) == 0 {
+		log.Fatalf("no search items found in %s", inputPath)
 	}
 
-	// Build IN clause for internal IDs.
-	// Example: WHERE i.id IN (41946, 47733, 47735)
-	inClause := strings.Join(itemIds, ",")
+	// Separate internalIds (numeric) and upcCodes (non-numeric)
+	internalIds, upcCodes := classifySearchItems(searchItems)
 
+	// Build WHERE clause
+	var whereClauses []string
+	if len(internalIds) > 0 {
+		inClause := strings.Join(internalIds, ",")
+		whereClauses = append(whereClauses, fmt.Sprintf("i.id IN (%s)", inClause))
+	}
+	if len(upcCodes) > 0 {
+		// Escape single quotes in UPC codes
+		escapedUpcCodes := make([]string, len(upcCodes))
+		for i, upc := range upcCodes {
+			escapedUpcCodes[i] = "'" + strings.ReplaceAll(upc, "'", "''") + "'"
+		}
+		upcClause := strings.Join(escapedUpcCodes, ",")
+		whereClauses = append(whereClauses, fmt.Sprintf("i.upccode IN (%s)", upcClause))
+	}
+
+	if len(whereClauses) == 0 {
+		log.Fatalf("no valid search criteria found")
+	}
+
+	whereClause := strings.Join(whereClauses, " OR ")
+
+	// Query Item table for basic info
 	query := "SELECT " +
 		"i.id AS internalId, " +
 		"i.itemid AS itemId, " +
-		"i.displayname AS displayName " +
+		"i.displayname AS displayName, " +
+		"i.upccode AS upcCode " +
 		"FROM Item i " +
-		"WHERE i.id IN (" + inClause + ") " +
+		"WHERE " + whereClause + " " +
 		"ORDER BY i.itemid"
 
 	req := &suiteql.QueryRequest{
@@ -82,19 +106,43 @@ func main() {
 	log.Printf("saved %d product rows to %s", resp.Count, outputPath)
 }
 
-// loadItemIds reads listInternalId.json and returns the listInternalId slice.
-func loadItemIds(path string) ([]string, error) {
+// loadSearchItems reads listInternalId.json and returns the listInternalIdOrUpcCode slice.
+func loadSearchItems(path string) ([]string, error) {
 	raw, err := os.ReadFile(path)
 	if err != nil {
 		return nil, fmt.Errorf("read %s: %w", path, err)
 	}
 
-	var payload listInternalIdPayload
+	var payload searchPayload
 	if err := json.Unmarshal(raw, &payload); err != nil {
 		return nil, fmt.Errorf("decode %s: %w", path, err)
 	}
 
-	return payload.ListInternalId, nil
+	return payload.ListInternalIdOrUpcCode, nil
+}
+
+// classifySearchItems separates numeric strings (internalIds) from non-numeric strings (upcCodes).
+func classifySearchItems(items []string) (internalIds []string, upcCodes []string) {
+	for _, item := range items {
+		item = strings.TrimSpace(item)
+		if item == "" {
+			continue
+		}
+		// Check if item is numeric (internalId) or non-numeric (upcCode)
+		isNumeric := true
+		for _, r := range item {
+			if r < '0' || r > '9' {
+				isNumeric = false
+				break
+			}
+		}
+		if isNumeric {
+			internalIds = append(internalIds, item)
+		} else {
+			upcCodes = append(upcCodes, item)
+		}
+	}
+	return internalIds, upcCodes
 }
 
 // loadClientFromEnv builds a NetSuite client config from environment variables.

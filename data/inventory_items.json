@@ -5,13 +5,21 @@
       "href": "https://9342705.suitetalk.api.netsuite.com/services/rest/query/v1/suiteql?limit=1000\u0026offset=0"
     }
   ],
-  "count": 4,
+  "count": 5,
   "items": [
     {
       "displayname": "41946",
       "internalid": "41946",
       "itemid": "Item Testing 5",
-      "links": []
+      "links": [],
+      "upccode": "41946"
+    },
+    {
+      "displayname": "SKUTES0006B",
+      "internalid": "43640",
+      "itemid": "Item Testing 6B",
+      "links": [],
+      "upccode": "SKUTES0006A"
     },
     {
       "displayname": "SKUTESbins004",
@@ -23,14 +31,16 @@
       "displayname": "10000111",
       "internalid": "47733",
       "itemid": "Testing Item Bins 1",
-      "links": []
+      "links": [],
+      "upccode": "10000111"
     },
     {
       "displayname": "10000112",
       "internalid": "47735",
       "itemid": "Testing Item Bins 2",
-      "links": []
+      "links": [],
+      "upccode": "10000112"
     }
   ],
-  "totalResults": 4
+  "totalResults": 5
 }
