@@ -1,0 +1,24 @@
+https://tasks.grit.software/browse/POSIOS-10308
+
+volh/ connectpos123
+You, 19 min
+
+You, 19 min, Edited
+Account k đúng or thiếu quyền phải a à
+Bao Lam Huy, 18 min
+QuotedQuotedSent by YouAccount k đúng or thiếu quyền phải a àEnd Quote press L to link back to original quoteEnd Quote press L to link back to original quoteem vào lại nhé
+You, 17 min
+QuotedQuoted Sent by Bao Lam Huyem vào lại nhéEnd Quote press L to link back to original quoteEnd Quote press L to link back to original quoteEm vào được rồi ạ
+Em đang check rồi nhé a
+Bao Lam Huy, 16 min
+hiện tại đang có 2 issues như anh có comment
++ 1 là phần product price đang không lấy giá đúng
++ 2 là phần tax đang không get về đúng
+Bao Lam Huy, 2 min
+cần vào NetSuite báo anh nhé
+You, 2 min
+Vâng em vào rồi ạ
+Bao Lam Huy, 1 min, Edited
+theo credentials 
+toorglobaladmin / connectpos123
+?

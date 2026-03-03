@@ -1,0 +1,76 @@
+Requirement:
+Set up and validate the integration flows between CPOS and NetSuite for Electronics Transfer's end client (Toor Corporation). The integration endpoints are already available, but configuration and verification are required.
+
+Tasks:
+
+Gather credentials and confirm data mapping for:
+Locations
+Products
+Inventory
+Customers
+Sales Orders
+Set up environment, credentials, and mapping config for each module (Location, Product, Customer, Inventory, Sales Orders).
+Validate data flows (push/pull) in both directions for each module.
+Handle errors and edge cases, ensuring data integrity across systems.
+
+Acceptance Criteria:
+
+Credentials securely stored and configured.
+All modules mapped and synced correctly.
+Successful data validation tests with sample records.
+Error handling and retry logic confirmed.
+
+NetSuite credentials:
+
+Type	Description	Notes
+Consumer Key	55c5b7f0aae6dea9aa97433a1108aedf5996f852ec96287cdf31e9c495dca7af	
+
+Consumer Secret	d99dd72ad15d4586b1415a69dc7181522f9bcff037833e5601fc38a9d096b306	
+
+Token Id	dbd4b08ba1152e01af9b5ec2f0d9ede672d3ee107b871d29fc896ed05b23f9aa	
+
+Token Secret	27c691d7260855f7ad1f50c51027a97e43416c61661c2827cb032b81c044df7e	
+
+Consumer Key	18c7962292df115a810c0c37f777068848fba32efb4da7398e196318776135c9	
+
+Consumer Secret	8195ea9acd489364a668da63b08d83bee97923238297b6dc387b903b658a8fb	
+
+Token Id	c5ea5346d7c2ffa978f94098143e37d23c963fa62e32ac680687f679ca84c166	
+
+Token Secret	9bf723082d50dfa960031dbed63f39e4d03501edbf3d0683e03dffca5303f906	
+
+Login Portal	connectpos.tech+toor@smartosc.com
+TEST1234$!	Contact Bao Lam to get 6-digit
+
+	
+	
+
+
+ConnectPOS account:
+
+Username	Password	Notes
+toorglobaladmin	connectpos123	
+
+
+Product's Price shall take the Retail Price
+
+The product prices in the cart and in the order details are incorrect (Check order CASHSALECS13175). Could you please check this for me tomorrow morning, @Bao Lam Huy? It's possible the POS system is calculating the order based on retail price while Netsuite is using the purchase price.
+
+
+
+Apply Tax:
+Code: CA_EL CAJON
+Rate: 8.25%
+City: EL CAJON (El Cajon, CA 8.25%)
+
+ Collapse comment: Bao Lam added a comment - 23/Feb/26 10:29 AM
+
+Bao Lam added a comment - 23/Feb/26 10:29 AM
+hiepnc1 updated Consumer Id/ Key and access token. Please help to update accordingly.
+
+ Collapse comment: Bao Lam added a comment - 16/Oct/25 4:14 PM
+
+Bao Lam added a comment - 16/Oct/25 4:14 PM
+hiepnc1 đã add tokenId và tokenSecret vào phần Description nhé.
+
+
