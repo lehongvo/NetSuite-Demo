@@ -168,8 +168,11 @@ func buildCashSaleRequest(order Order, rawPayload json.RawMessage) cashSaleReque
 
 	items := make([]cashSaleItem, 0, len(order.Items))
 	for _, it := range order.Items {
-		rate := pickNumber(it.PriceIncTax, it.Price, it.TotalPrice)
+		// Dùng giá trước thuế cho rate (Price / TotalPrice),
+		// và giá đã gồm thuế cho amount/grossAmt để NetSuite chỉ tính thuế 1 lần.
+		rate := pickNumber(it.Price, it.TotalPrice)
 		amount := pickNumber(it.PriceIncTax, it.TotalPrice, it.Price)
+
 		items = append(items, cashSaleItem{
 			ItemID:   it.ProductID,
 			Quantity: it.Quantity,

@@ -1,0 +1,232 @@
+{
+  "items": [
+    {
+      "internalId": "3192",
+      "itemId": "ConnectPOS Test Product",
+      "displayName": "ConnectPOS Test Product",
+      "upcCode": "9999841234",
+      "cost": "0.500000",
+      "lastPurchase": "0.000000",
+      "pricing": [
+        {
+          "levelName": "Retail Price",
+          "currency": "US Dollar",
+          "discount": "0.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "1.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "35% OFF (+20%) BlueRidge",
+          "currency": "US Dollar",
+          "discount": "-48.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.520000"
+            }
+          ]
+        },
+        {
+          "levelName": "35% OFF (+5%) Buy Group",
+          "currency": "US Dollar",
+          "discount": "-38.250000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.620000"
+            }
+          ]
+        },
+        {
+          "levelName": "35% OFF For Wholesale",
+          "currency": "US Dollar",
+          "discount": "-35.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.650000"
+            }
+          ]
+        },
+        {
+          "levelName": "40% OFF (+20%) BlueRidge",
+          "currency": "US Dollar",
+          "discount": "-52.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.480000"
+            }
+          ]
+        },
+        {
+          "levelName": "40% OFF (+5%) Buy Group",
+          "currency": "US Dollar",
+          "discount": "-43.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.570000"
+            }
+          ]
+        },
+        {
+          "levelName": "40% OFF For Wholesale",
+          "currency": "US Dollar",
+          "discount": "-40.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.600000"
+            }
+          ]
+        },
+        {
+          "levelName": "50% OFF Employee Rate",
+          "currency": "US Dollar",
+          "discount": "-50.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.500000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "internalId": "3310",
+      "itemId": "ConnectPOS Test Product 2",
+      "displayName": "",
+      "upcCode": "9999841234",
+      "cost": "1.000000",
+      "lastPurchase": "0.000000",
+      "pricing": [
+        {
+          "levelName": "Retail Price",
+          "currency": "US Dollar",
+          "discount": "0.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "1.000000"
+            },
+            {
+              "quantity": 6,
+              "value": "1.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "35% OFF (+20%) BlueRidge",
+          "currency": "US Dollar",
+          "discount": "-48.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.520000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "35% OFF (+5%) Buy Group",
+          "currency": "US Dollar",
+          "discount": "-38.250000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.620000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "35% OFF For Wholesale",
+          "currency": "US Dollar",
+          "discount": "-35.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.650000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "40% OFF (+20%) BlueRidge",
+          "currency": "US Dollar",
+          "discount": "-52.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.480000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "40% OFF (+5%) Buy Group",
+          "currency": "US Dollar",
+          "discount": "-43.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.570000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "40% OFF For Wholesale",
+          "currency": "US Dollar",
+          "discount": "-40.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.600000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        },
+        {
+          "levelName": "50% OFF Employee Rate",
+          "currency": "US Dollar",
+          "discount": "-50.000000",
+          "prices": [
+            {
+              "quantity": 0,
+              "value": "0.500000"
+            },
+            {
+              "quantity": 6,
+              "value": "0.000000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

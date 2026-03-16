@@ -4,7 +4,7 @@ go 1.23.0
 
 toolchain go1.24.4
 
-replace git02.smartosc.com/production/pbtypes => ../../sharedPackages/pbtypes
+replace git02.smartosc.com/production/pbtypes => ../../shopify/pbtypes
 
 replace git02.smartosc.com/production/platform-connector/go-netsuite => ../../servicesConnectPO/go-netsuite
 
@@ -21,15 +21,18 @@ require (
 require (
 	git02.smartosc.com/production/core/models v0.0.0-20230407034754-d88e3785244a // indirect
 	git02.smartosc.com/production/core/pbtypes v0.0.0-20230406073011-472b70d8c3ba // indirect
+	git02.smartosc.com/production/platform-connector/go-rest-netsuite v0.0.0-20250924040329-cf4e5f34d2b1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/dghubble/oauth1 v0.7.3 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/go-redis/redis/v8 v8.11.5 // indirect
+	github.com/gofrs/uuid v4.4.0+incompatible // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0 // indirect
+	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/thanhpk/randstr v1.0.4 // indirect

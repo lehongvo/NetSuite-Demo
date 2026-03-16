@@ -1,0 +1,128 @@
+{
+    "items": [
+        {
+            "id": "3310",
+            "name": "ConnectPOS Test Product 2",
+            "sku": "ConnectPOS Test Product 2",
+            "price": "0.500000",
+            "status": 1,
+            "visibility": 1,
+            "barcode": "9999841234",
+            "taxable": true,
+            "type": "simple",
+            "description": "9999841234",
+            "stockItem": {
+                "isInStock": true,
+                "isQtyDecimal": true,
+                "manageStock": true
+            },
+            "tierPrices": [
+                {
+                    "quantity": 6,
+                    "price": "1.000000",
+                    "name": "Retail Price",
+                    "currency": "US Dollar"
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "35% OFF (+20%) BlueRidge",
+                    "currency": "US Dollar",
+                    "discount_amount": -48
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "35% OFF (+5%) Buy Group",
+                    "currency": "US Dollar",
+                    "discount_amount": -38.25
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "35% OFF For Wholesale",
+                    "currency": "US Dollar",
+                    "discount_amount": -35
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "40% OFF (+20%) BlueRidge",
+                    "currency": "US Dollar",
+                    "discount_amount": -52
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "40% OFF (+5%) Buy Group",
+                    "currency": "US Dollar",
+                    "discount_amount": -43
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "40% OFF For Wholesale",
+                    "currency": "US Dollar",
+                    "discount_amount": -40
+                },
+                {
+                    "quantity": 6,
+                    "price": "0.000000",
+                    "name": "50% OFF Employee Rate",
+                    "currency": "US Dollar",
+                    "discount_amount": -50
+                }
+            ],
+            "websiteIds": [
+                "1"
+            ],
+            "requiresShipping": true,
+            "allowShipping": true,
+            "createdAt": "2026-02-25T10:35:24Z",
+            "updatedAt": "2026-02-26T11:18:05Z",
+            "msrp": "1.000000",
+            "uuid": "3310",
+            "productType": "simple",
+            "visibilityScope": "global",
+            "upc": "9999841234",
+            "ean": "9999841234",
+            "cost": "1.000000"
+        },
+        {
+            "id": "3192",
+            "name": "ConnectPOS Test Product",
+            "sku": "ConnectPOS Test Product",
+            "price": "0.500000",
+            "status": 1,
+            "visibility": 1,
+            "barcode": "9999841234",
+            "taxable": true,
+            "type": "simple",
+            "description": "9999841234",
+            "stockItem": {
+                "isInStock": true,
+                "isQtyDecimal": true,
+                "manageStock": true
+            },
+            "websiteIds": [
+                "1"
+            ],
+            "requiresShipping": true,
+            "allowShipping": true,
+            "createdAt": "2025-10-17T08:06:37Z",
+            "updatedAt": "2026-03-02T20:02:57Z",
+            "msrp": "0.500000",
+            "vendor": "ConnectPOS",
+            "uuid": "3192",
+            "productType": "simple",
+            "visibilityScope": "global",
+            "upc": "9999841234",
+            "ean": "9999841234",
+            "cost": "0.500000"
+        }
+    ],
+    "page": 1,
+    "limit": 30,
+    "countItems": 2,
+    "maxPage": 1
+}
