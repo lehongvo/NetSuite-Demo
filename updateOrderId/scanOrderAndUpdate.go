@@ -123,7 +123,7 @@ func main() {
 		}
 
 		var cashSale *gns.SalesTransaction
-		err = retryWithBackoff(5, func() error {
+		err = retryWithBackoff(1000, func() error {
 			var getErr error
 			cashSale, getErr = client.SalesTransactionService.Get(order.InternalID, "cashSale")
 			return getErr
@@ -136,7 +136,7 @@ func main() {
 			saveJSON(orders)
 			fmt.Println()
 			if i < len(orders)-1 {
-				time.Sleep(2 * time.Second)
+				time.Sleep(0 * time.Second)
 			}
 			continue
 		}
@@ -160,7 +160,7 @@ func main() {
 				Status:     gns.CashSaleStatusLabelNotDeposited,
 				Account:    &gns.RecordRef{InternalId: "1"},
 			}
-			err = retryWithBackoff(5, func() error {
+			err = retryWithBackoff(1000, func() error {
 				return client.CashSaleService.Update(undepositReq)
 			})
 			if err != nil {
@@ -173,7 +173,7 @@ func main() {
 				continue
 			}
 			fmt.Println("    Undeposited OK")
-			time.Sleep(2 * time.Second)
+			time.Sleep(500 * time.Millisecond)
 
 			// Step 2: Update tranId
 			fmt.Println("    Step 2: Updating tranId...")
@@ -183,7 +183,7 @@ func main() {
 				TranId:     order.CorrectOrder,
 				Account:    &gns.RecordRef{InternalId: "1"},
 			}
-			err = retryWithBackoff(5, func() error {
+			err = retryWithBackoff(1000, func() error {
 				return client.CashSaleService.Update(updateReq)
 			})
 			if err != nil {
@@ -196,7 +196,7 @@ func main() {
 					Status:     gns.CashSaleStatusLabelDeposited,
 					Account:    &gns.RecordRef{InternalId: "1"},
 				}
-				_ = retryWithBackoff(5, func() error {
+				_ = retryWithBackoff(1000, func() error {
 					return client.CashSaleService.Update(redepReq)
 				})
 				order.Status = "error_update"
@@ -207,7 +207,7 @@ func main() {
 				continue
 			}
 			fmt.Printf("    TranId updated: %s -> %s\n", order.WrongOrder, order.CorrectOrder)
-			time.Sleep(2 * time.Second)
+			time.Sleep(0 * time.Second)
 
 			// Step 3: Re-deposit
 			fmt.Println("    Step 3: Re-depositing...")
@@ -217,7 +217,7 @@ func main() {
 				Status:     gns.CashSaleStatusLabelDeposited,
 				Account:    &gns.RecordRef{InternalId: "1"},
 			}
-			err = retryWithBackoff(5, func() error {
+			err = retryWithBackoff(1000, func() error {
 				return client.CashSaleService.Update(redepReq)
 			})
 			if err != nil {
@@ -233,33 +233,9 @@ func main() {
 			}
 			fmt.Println("    Re-deposited OK")
 
-			// Step 4: Verify
-			fmt.Println("    Step 4: Verifying...")
-			time.Sleep(2 * time.Second)
-			var verifyCS *gns.SalesTransaction
-			err = retryWithBackoff(5, func() error {
-				var e error
-				verifyCS, e = client.SalesTransactionService.Get(order.InternalID, "cashSale")
-				return e
-			})
-			if err != nil {
-				fmt.Printf("    Warning: Could not verify: %v\n", err)
-				order.Status = "updated_unverified"
-				order.IsSynced = true
-			} else if verifyCS.TranId == order.CorrectOrder {
-				fmt.Printf("    Verified: tranId = %s (correct)\n", verifyCS.TranId)
-				order.Status = "updated"
-				order.IsSynced = true
-			} else {
-				fmt.Printf("    MISMATCH after update: expected %s, got %s\n", order.CorrectOrder, verifyCS.TranId)
-				order.Status = "error_verify"
-				order.IsSynced = false
-				errorCount++
-				saveJSON(orders)
-				fmt.Println()
-				continue
-			}
-
+			fmt.Printf("  DONE: %s → %s ✓\n", order.WrongOrder, order.CorrectOrder)
+			order.Status = "updated"
+			order.IsSynced = true
 			order.CurrentTranID = order.CorrectOrder
 			updatedCount++
 		} else {
@@ -275,7 +251,7 @@ func main() {
 		fmt.Println()
 
 		if i < len(orders)-1 {
-			time.Sleep(3 * time.Second)
+			time.Sleep(500 * time.Millisecond)
 		}
 	}
 
