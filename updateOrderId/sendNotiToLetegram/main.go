@@ -10,12 +10,14 @@ import (
 	"time"
 )
 
-// Config - Telegram config, sẽ được user điền
 const (
-	TelegramBotToken = "REMOVED_TOKEN"
-	TelegramChatID   = "6012401431"
-	CheckInterval    = 1 * time.Minute
-	OrderInfoPath    = "../orderInfo.json"
+	CheckInterval = 10 * time.Minute
+	OrderInfoPath = "../orderInfo.json"
+)
+
+var (
+	TelegramBotToken = os.Getenv("TELEGRAM_BOT_TOKEN")
+	TelegramChatID   = os.Getenv("TELEGRAM_CHAT_ID")
 )
 
 type OrderInfo struct {
@@ -119,6 +121,10 @@ func buildMessage(stats *Stats, prevUpdated int) string {
 }
 
 func main() {
+	if TelegramBotToken == "" || TelegramChatID == "" {
+		log.Fatal("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID env vars are required")
+	}
+
 	fmt.Println("=== Telegram Notifier for Order Update ===")
 	fmt.Printf("Checking %s every %v\n", OrderInfoPath, CheckInterval)
 	fmt.Printf("Telegram Bot: %s\n", TelegramBotToken[:10]+"...")

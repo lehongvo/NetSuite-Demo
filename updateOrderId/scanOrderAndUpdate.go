@@ -173,7 +173,7 @@ func main() {
 				continue
 			}
 			fmt.Println("    Undeposited OK")
-			time.Sleep(500 * time.Millisecond)
+			time.Sleep(0 * time.Millisecond)
 
 			// Step 2: Update tranId
 			fmt.Println("    Step 2: Updating tranId...")
@@ -207,7 +207,7 @@ func main() {
 				continue
 			}
 			fmt.Printf("    TranId updated: %s -> %s\n", order.WrongOrder, order.CorrectOrder)
-			time.Sleep(0 * time.Second)
+			time.Sleep(0 * time.Millisecond)
 
 			// Step 3: Re-deposit
 			fmt.Println("    Step 3: Re-depositing...")
@@ -251,7 +251,7 @@ func main() {
 		fmt.Println()
 
 		if i < len(orders)-1 {
-			time.Sleep(500 * time.Millisecond)
+			time.Sleep(0 * time.Millisecond)
 		}
 	}
 
